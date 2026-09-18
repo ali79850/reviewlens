@@ -1,0 +1,27 @@
+{
+  "download_timestamp_utc": "2026-09-18T00:24:49.762399+00:00",
+  "source": "https://mcauleylab.ucsd.edu/public_datasets/data/amazon_2023/raw/review_categories/Electronics.jsonl.gz",
+  "sampling_method": "reservoir sampling over full JSONL stream (uniform, unbiased by file order)",
+  "n_rows": 50000,
+  "columns": [
+    "text",
+    "title",
+    "rating",
+    "verified_purchase",
+    "timestamp"
+  ],
+  "rating_distribution": {
+    "1.0": 6399,
+    "2.0": 2758,
+    "3.0": 3457,
+    "4.0": 6492,
+    "5.0": 30894
+  },
+  "text_length_chars": {
+    "mean": 264.3,
+    "median": 137.0,
+    "min": 15,
+    "max": 26723
+  },
+  "duplicate_text_rows": 403
+}

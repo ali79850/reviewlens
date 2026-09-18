@@ -1,0 +1,25 @@
+{
+  "n_rows_raw": 50000,
+  "n_rows_after_dedup": 49597,
+  "duplicates_dropped": 403,
+  "length_cap_chars_p99": 2007,
+  "n_rows_after_length_cap": 49101,
+  "outliers_dropped": 496,
+  "n_train": 39280,
+  "n_test": 9821,
+  "sentiment_distribution_full": {
+    "Positive": 36635,
+    "Negative": 9069,
+    "Neutral": 3397
+  },
+  "sentiment_distribution_train": {
+    "Positive": 29307,
+    "Negative": 7255,
+    "Neutral": 2718
+  },
+  "sentiment_distribution_test": {
+    "Positive": 7328,
+    "Negative": 1814,
+    "Neutral": 679
+  }
+}

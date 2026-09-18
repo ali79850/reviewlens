@@ -1,0 +1,29 @@
+# Environments
+venv/
+.venv/
+__pycache__/
+*.pyc
+
+# Data & models (regenerate via scripts, never commit)
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+models/*
+!models/.gitkeep
+
+# Secrets
+.env
+
+# Notebooks checkpoints
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+
+# Virtual environment
+venv/

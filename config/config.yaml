@@ -1,0 +1,15 @@
+paths:
+  data_raw: "data/raw"
+  data_processed: "data/processed"
+  models: "models"
+  results: "results"
+
+dataset:
+  hf_name: "McAuley-Lab/Amazon-Reviews-2023"
+  hf_config: "raw_review_Electronics"
+  target_samples: 50000
+  shuffle_seed: 42
+  shuffle_buffer: 20000
+  min_text_chars: 15
+
+random_seed: 42

@@ -1,0 +1,36 @@
+{
+  "results": [
+    {
+      "model": "tfidf-logreg",
+      "accuracy": 0.8229,
+      "precision_macro": 0.6392,
+      "recall_macro": 0.6972,
+      "f1_macro": 0.6592,
+      "precision_weighted": 0.8612,
+      "recall_weighted": 0.8229,
+      "f1_weighted": 0.8385
+    },
+    {
+      "model": "tfidf-svm",
+      "accuracy": 0.8585,
+      "precision_macro": 0.6593,
+      "recall_macro": 0.6503,
+      "f1_macro": 0.6534,
+      "precision_weighted": 0.8507,
+      "recall_weighted": 0.8585,
+      "f1_weighted": 0.8542
+    },
+    {
+      "model": "distilbert-finetuned",
+      "accuracy": 0.8804,
+      "precision_macro": 0.6881,
+      "recall_macro": 0.6837,
+      "f1_macro": 0.6851,
+      "precision_weighted": 0.875,
+      "recall_weighted": 0.8804,
+      "f1_weighted": 0.8774
+    }
+  ],
+  "winner_by_macro_f1": "distilbert-finetuned",
+  "note": "Baseline models evaluated on the full 9,821-row test set. Transformer fine-tuned on a 20k-row Colab subsample (T4 GPU) and evaluated here on the same full 9,821-row test set for a fair comparison."
+}
