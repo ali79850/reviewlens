@@ -1,0 +1,97 @@
+{
+  "method": "MiniLM embeddings + KMeans + c-TF-IDF (BERTopic-style, hdbscan-free)",
+  "reason_for_not_using_bertopic": "BERTopic's default backend (hdbscan) has a well-documented history of failing to build on Windows with recent Python versions, requiring Visual Studio Build Tools -- the same category of issue already encountered with pandas earlier in this project. This implementation reproduces BERTopic's core idea (cluster + class-based TF-IDF) using only scikit-learn and sentence-transformers, both already required elsewhere in the project.",
+  "n_reviews_used": 15000,
+  "k_selection_method": "silhouette score (cosine) over candidates on a 3000-review subsample",
+  "silhouette_scores_by_k": {
+    "6": 0.0676,
+    "8": 0.0609,
+    "10": 0.0635,
+    "12": 0.0597,
+    "15": 0.0656,
+    "18": 0.0675
+  },
+  "chosen_k": 6,
+  "cluster_sizes": {
+    "0": 1235,
+    "1": 3376,
+    "2": 3260,
+    "3": 2160,
+    "4": 2943,
+    "5": 2026
+  },
+  "cluster_keywords": {
+    "0": [
+      "camera",
+      "lens",
+      "quality",
+      "easy",
+      "cameras",
+      "video",
+      "price",
+      "picture",
+      "time",
+      "pictures"
+    ],
+    "1": [
+      "worked",
+      "cable",
+      "time",
+      "did",
+      "does",
+      "phone",
+      "usb",
+      "power",
+      "charge",
+      "tv"
+    ],
+    "2": [
+      "price",
+      "quality",
+      "easy",
+      "perfect",
+      "time",
+      "fast",
+      "looks",
+      "exactly",
+      "excellent",
+      "needed"
+    ],
+    "3": [
+      "sound",
+      "headphones",
+      "quality",
+      "ear",
+      "speaker",
+      "price",
+      "sound quality",
+      "bass",
+      "music",
+      "bluetooth"
+    ],
+    "4": [
+      "easy",
+      "tv",
+      "price",
+      "drive",
+      "laptop",
+      "time",
+      "screen",
+      "computer",
+      "usb",
+      "need"
+    ],
+    "5": [
+      "case",
+      "ipad",
+      "screen",
+      "fit",
+      "cover",
+      "fits",
+      "easy",
+      "laptop",
+      "keyboard",
+      "tablet"
+    ]
+  }
+}
