@@ -1,0 +1,1356 @@
+{
+  "source": "unsupervised clustering over training corpus noun-phrase candidates",
+  "n_reviews_scanned": 8000,
+  "n_raw_candidates": 24967,
+  "n_canonical_aspects": 183,
+  "vocabulary": [
+    {
+      "canonical": "product",
+      "members": [
+        "product",
+        "products"
+      ],
+      "frequency": 518
+    },
+    {
+      "canonical": "price",
+      "members": [
+        "cost",
+        "price"
+      ],
+      "frequency": 503
+    },
+    {
+      "canonical": "sound",
+      "members": [
+        "audio",
+        "sound",
+        "sound quality"
+      ],
+      "frequency": 391
+    },
+    {
+      "canonical": "problem",
+      "members": [
+        "issue",
+        "issues",
+        "problem",
+        "problems",
+        "trouble"
+      ],
+      "frequency": 353
+    },
+    {
+      "canonical": "case",
+      "members": [
+        "case"
+      ],
+      "frequency": 349
+    },
+    {
+      "canonical": "phone",
+      "members": [
+        "iphone",
+        "phone",
+        "phones"
+      ],
+      "frequency": 321
+    },
+    {
+      "canonical": "time",
+      "members": [
+        "time",
+        "times"
+      ],
+      "frequency": 303
+    },
+    {
+      "canonical": "computer",
+      "members": [
+        "computer",
+        "pc",
+        "windows"
+      ],
+      "frequency": 295
+    },
+    {
+      "canonical": "lot",
+      "members": [
+        "lot",
+        "lots",
+        "plenty"
+      ],
+      "frequency": 273
+    },
+    {
+      "canonical": "cable",
+      "members": [
+        "cable",
+        "cables",
+        "cord",
+        "cords"
+      ],
+      "frequency": 264
+    },
+    {
+      "canonical": "quality",
+      "members": [
+        "good quality",
+        "great quality",
+        "quality"
+      ],
+      "frequency": 255
+    },
+    {
+      "canonical": "works",
+      "members": [
+        "works"
+      ],
+      "frequency": 254
+    },
+    {
+      "canonical": "camera",
+      "members": [
+        "camera",
+        "cameras"
+      ],
+      "frequency": 237
+    },
+    {
+      "canonical": "screen",
+      "members": [
+        "monitor",
+        "screen"
+      ],
+      "frequency": 234
+    },
+    {
+      "canonical": "money",
+      "members": [
+        "money"
+      ],
+      "frequency": 227
+    },
+    {
+      "canonical": "tv",
+      "members": [
+        "hdmi",
+        "tv"
+      ],
+      "frequency": 210
+    },
+    {
+      "canonical": "laptop",
+      "members": [
+        "laptop"
+      ],
+      "frequency": 209
+    },
+    {
+      "canonical": "no issues",
+      "members": [
+        "any issues",
+        "any problems",
+        "no issues",
+        "no problems"
+      ],
+      "frequency": 207
+    },
+    {
+      "canonical": "device",
+      "members": [
+        "device",
+        "devices"
+      ],
+      "frequency": 205
+    },
+    {
+      "canonical": "purchase",
+      "members": [
+        "purchase",
+        "seller"
+      ],
+      "frequency": 204
+    },
+    {
+      "canonical": "work",
+      "members": [
+        "job",
+        "work"
+      ],
+      "frequency": 202
+    },
+    {
+      "canonical": "battery",
+      "members": [
+        "batteries",
+        "battery"
+      ],
+      "frequency": 198
+    },
+    {
+      "canonical": "picture",
+      "members": [
+        "photos",
+        "picture",
+        "pictures"
+      ],
+      "frequency": 194
+    },
+    {
+      "canonical": "headphones",
+      "members": [
+        "headphones",
+        "headset"
+      ],
+      "frequency": 188
+    },
+    {
+      "canonical": "amazon",
+      "members": [
+        "amazon"
+      ],
+      "frequency": 178
+    },
+    {
+      "canonical": "ears",
+      "members": [
+        "ear",
+        "earbuds",
+        "ears"
+      ],
+      "frequency": 177
+    },
+    {
+      "canonical": "great product",
+      "members": [
+        "good product",
+        "great product"
+      ],
+      "frequency": 171
+    },
+    {
+      "canonical": "house",
+      "members": [
+        "home",
+        "house"
+      ],
+      "frequency": 168
+    },
+    {
+      "canonical": "music",
+      "members": [
+        "band",
+        "music"
+      ],
+      "frequency": 158
+    },
+    {
+      "canonical": "years",
+      "members": [
+        "few months",
+        "month",
+        "months",
+        "years"
+      ],
+      "frequency": 156
+    },
+    {
+      "canonical": "great price",
+      "members": [
+        "good price",
+        "great price",
+        "great value"
+      ],
+      "frequency": 153
+    },
+    {
+      "canonical": "speakers",
+      "members": [
+        "speaker",
+        "speakers"
+      ],
+      "frequency": 143
+    },
+    {
+      "canonical": "item",
+      "members": [
+        "item"
+      ],
+      "frequency": 142
+    },
+    {
+      "canonical": "use",
+      "members": [
+        "use"
+      ],
+      "frequency": 139
+    },
+    {
+      "canonical": "reviews",
+      "members": [
+        "review",
+        "reviews"
+      ],
+      "frequency": 133
+    },
+    {
+      "canonical": "ipad",
+      "members": [
+        "ipad"
+      ],
+      "frequency": 131
+    },
+    {
+      "canonical": "way",
+      "members": [
+        "no way",
+        "way"
+      ],
+      "frequency": 130
+    },
+    {
+      "canonical": "charger",
+      "members": [
+        "charge",
+        "charger"
+      ],
+      "frequency": 122
+    },
+    {
+      "canonical": "box",
+      "members": [
+        "box"
+      ],
+      "frequency": 120
+    },
+    {
+      "canonical": "tablet",
+      "members": [
+        "tablet"
+      ],
+      "frequency": 120
+    },
+    {
+      "canonical": "wife",
+      "members": [
+        "husband",
+        "wife"
+      ],
+      "frequency": 119
+    },
+    {
+      "canonical": "unit",
+      "members": [
+        "unit"
+      ],
+      "frequency": 116
+    },
+    {
+      "canonical": "keyboard",
+      "members": [
+        "keyboard"
+      ],
+      "frequency": 109
+    },
+    {
+      "canonical": "size",
+      "members": [
+        "length",
+        "size"
+      ],
+      "frequency": 108
+    },
+    {
+      "canonical": "instructions",
+      "members": [
+        "directions",
+        "instructions"
+      ],
+      "frequency": 105
+    },
+    {
+      "canonical": "color",
+      "members": [
+        "color",
+        "colors"
+      ],
+      "frequency": 105
+    },
+    {
+      "canonical": "bag",
+      "members": [
+        "backpack",
+        "bag"
+      ],
+      "frequency": 103
+    },
+    {
+      "canonical": "macbook",
+      "members": [
+        "apple",
+        "mac",
+        "macbook"
+      ],
+      "frequency": 95
+    },
+    {
+      "canonical": "video",
+      "members": [
+        "video",
+        "videos"
+      ],
+      "frequency": 94
+    },
+    {
+      "canonical": "desk",
+      "members": [
+        "desk",
+        "office"
+      ],
+      "frequency": 93
+    },
+    {
+      "canonical": "battery life",
+      "members": [
+        "battery life"
+      ],
+      "frequency": 91
+    },
+    {
+      "canonical": "place",
+      "members": [
+        "place"
+      ],
+      "frequency": 83
+    },
+    {
+      "canonical": "fact",
+      "members": [
+        "fact"
+      ],
+      "frequency": 81
+    },
+    {
+      "canonical": "mouse",
+      "members": [
+        "mouse"
+      ],
+      "frequency": 77
+    },
+    {
+      "canonical": "bluetooth",
+      "members": [
+        "bluetooth"
+      ],
+      "frequency": 73
+    },
+    {
+      "canonical": "cover",
+      "members": [
+        "cover"
+      ],
+      "frequency": 72
+    },
+    {
+      "canonical": "kids",
+      "members": [
+        "kids"
+      ],
+      "frequency": 71
+    },
+    {
+      "canonical": "hand",
+      "members": [
+        "hand",
+        "hands"
+      ],
+      "frequency": 70
+    },
+    {
+      "canonical": "thanks",
+      "members": [
+        "thanks"
+      ],
+      "frequency": 69
+    },
+    {
+      "canonical": "button",
+      "members": [
+        "button",
+        "buttons"
+      ],
+      "frequency": 69
+    },
+    {
+      "canonical": "replacement",
+      "members": [
+        "replacement"
+      ],
+      "frequency": 67
+    },
+    {
+      "canonical": "room",
+      "members": [
+        "room"
+      ],
+      "frequency": 65
+    },
+    {
+      "canonical": "wall",
+      "members": [
+        "wall"
+      ],
+      "frequency": 65
+    },
+    {
+      "canonical": "package",
+      "members": [
+        "package",
+        "packaging"
+      ],
+      "frequency": 65
+    },
+    {
+      "canonical": "fits",
+      "members": [
+        "fit",
+        "fits"
+      ],
+      "frequency": 65
+    },
+    {
+      "canonical": "car",
+      "members": [
+        "car"
+      ],
+      "frequency": 64
+    },
+    {
+      "canonical": "no complaints",
+      "members": [
+        "no complaints",
+        "only complaint"
+      ],
+      "frequency": 64
+    },
+    {
+      "canonical": "company",
+      "members": [
+        "company"
+      ],
+      "frequency": 63
+    },
+    {
+      "canonical": "couple",
+      "members": [
+        "couple"
+      ],
+      "frequency": 63
+    },
+    {
+      "canonical": "kindle",
+      "members": [
+        "kindle"
+      ],
+      "frequency": 63
+    },
+    {
+      "canonical": "power",
+      "members": [
+        "power"
+      ],
+      "frequency": 62
+    },
+    {
+      "canonical": "people",
+      "members": [
+        "people"
+      ],
+      "frequency": 62
+    },
+    {
+      "canonical": "setup",
+      "members": [
+        "setup"
+      ],
+      "frequency": 62
+    },
+    {
+      "canonical": "games",
+      "members": [
+        "games",
+        "gaming"
+      ],
+      "frequency": 62
+    },
+    {
+      "canonical": "reason",
+      "members": [
+        "only reason",
+        "reason"
+      ],
+      "frequency": 61
+    },
+    {
+      "canonical": "app",
+      "members": [
+        "app"
+      ],
+      "frequency": 60
+    },
+    {
+      "canonical": "order",
+      "members": [
+        "order"
+      ],
+      "frequency": 58
+    },
+    {
+      "canonical": "son",
+      "members": [
+        "son"
+      ],
+      "frequency": 58
+    },
+    {
+      "canonical": "customer service",
+      "members": [
+        "customer service",
+        "service"
+      ],
+      "frequency": 58
+    },
+    {
+      "canonical": "gift",
+      "members": [
+        "gift"
+      ],
+      "frequency": 56
+    },
+    {
+      "canonical": "material",
+      "members": [
+        "material",
+        "plastic"
+      ],
+      "frequency": 56
+    },
+    {
+      "canonical": "drive",
+      "members": [
+        "drive"
+      ],
+      "frequency": 55
+    },
+    {
+      "canonical": "volume",
+      "members": [
+        "volume"
+      ],
+      "frequency": 55
+    },
+    {
+      "canonical": "day",
+      "members": [
+        "day"
+      ],
+      "frequency": 53
+    },
+    {
+      "canonical": "installation",
+      "members": [
+        "installation"
+      ],
+      "frequency": 53
+    },
+    {
+      "canonical": "end",
+      "members": [
+        "end"
+      ],
+      "frequency": 53
+    },
+    {
+      "canonical": "internet",
+      "members": [
+        "internet",
+        "network"
+      ],
+      "frequency": 53
+    },
+    {
+      "canonical": "remote",
+      "members": [
+        "remote"
+      ],
+      "frequency": 52
+    },
+    {
+      "canonical": "daughter",
+      "members": [
+        "daughter"
+      ],
+      "frequency": 51
+    },
+    {
+      "canonical": "adapter",
+      "members": [
+        "adapter"
+      ],
+      "frequency": 51
+    },
+    {
+      "canonical": "router",
+      "members": [
+        "router"
+      ],
+      "frequency": 51
+    },
+    {
+      "canonical": "stand",
+      "members": [
+        "stand"
+      ],
+      "frequency": 50
+    },
+    {
+      "canonical": "needs",
+      "members": [
+        "needs"
+      ],
+      "frequency": 50
+    },
+    {
+      "canonical": "light",
+      "members": [
+        "light"
+      ],
+      "frequency": 49
+    },
+    {
+      "canonical": "keys",
+      "members": [
+        "keys"
+      ],
+      "frequency": 48
+    },
+    {
+      "canonical": "cons",
+      "members": [
+        "cons",
+        "pros"
+      ],
+      "frequency": 48
+    },
+    {
+      "canonical": "connection",
+      "members": [
+        "connection"
+      ],
+      "frequency": 47
+    },
+    {
+      "canonical": "update",
+      "members": [
+        "update"
+      ],
+      "frequency": 46
+    },
+    {
+      "canonical": "design",
+      "members": [
+        "design"
+      ],
+      "frequency": 46
+    },
+    {
+      "canonical": "software",
+      "members": [
+        "software"
+      ],
+      "frequency": 46
+    },
+    {
+      "canonical": "pair",
+      "members": [
+        "pair"
+      ],
+      "frequency": 45
+    },
+    {
+      "canonical": "bass",
+      "members": [
+        "bass"
+      ],
+      "frequency": 45
+    },
+    {
+      "canonical": "purpose",
+      "members": [
+        "purpose"
+      ],
+      "frequency": 45
+    },
+    {
+      "canonical": "watch",
+      "members": [
+        "watch"
+      ],
+      "frequency": 41
+    },
+    {
+      "canonical": "piece",
+      "members": [
+        "piece"
+      ],
+      "frequency": 40
+    },
+    {
+      "canonical": "system",
+      "members": [
+        "system"
+      ],
+      "frequency": 40
+    },
+    {
+      "canonical": "expectations",
+      "members": [
+        "expectations"
+      ],
+      "frequency": 40
+    },
+    {
+      "canonical": "wifi",
+      "members": [
+        "wifi"
+      ],
+      "frequency": 39
+    },
+    {
+      "canonical": "signal",
+      "members": [
+        "signal"
+      ],
+      "frequency": 39
+    },
+    {
+      "canonical": "stuff",
+      "members": [
+        "stuff"
+      ],
+      "frequency": 38
+    },
+    {
+      "canonical": "love",
+      "members": [
+        "love"
+      ],
+      "frequency": 38
+    },
+    {
+      "canonical": "speed",
+      "members": [
+        "speed"
+      ],
+      "frequency": 38
+    },
+    {
+      "canonical": "night",
+      "members": [
+        "night"
+      ],
+      "frequency": 38
+    },
+    {
+      "canonical": "warranty",
+      "members": [
+        "warranty"
+      ],
+      "frequency": 38
+    },
+    {
+      "canonical": "alexa",
+      "members": [
+        "alexa"
+      ],
+      "frequency": 37
+    },
+    {
+      "canonical": "mind",
+      "members": [
+        "mind"
+      ],
+      "frequency": 37
+    },
+    {
+      "canonical": "performance",
+      "members": [
+        "performance"
+      ],
+      "frequency": 37
+    },
+    {
+      "canonical": "space",
+      "members": [
+        "space"
+      ],
+      "frequency": 37
+    },
+    {
+      "canonical": "ease",
+      "members": [
+        "ease"
+      ],
+      "frequency": 37
+    },
+    {
+      "canonical": "refund",
+      "members": [
+        "refund"
+      ],
+      "frequency": 37
+    },
+    {
+      "canonical": "ability",
+      "members": [
+        "ability"
+      ],
+      "frequency": 37
+    },
+    {
+      "canonical": "life",
+      "members": [
+        "life"
+      ],
+      "frequency": 36
+    },
+    {
+      "canonical": "weight",
+      "members": [
+        "weight"
+      ],
+      "frequency": 36
+    },
+    {
+      "canonical": "noise",
+      "members": [
+        "noise"
+      ],
+      "frequency": 36
+    },
+    {
+      "canonical": "mount",
+      "members": [
+        "mount"
+      ],
+      "frequency": 36
+    },
+    {
+      "canonical": "set",
+      "members": [
+        "set"
+      ],
+      "frequency": 35
+    },
+    {
+      "canonical": "movies",
+      "members": [
+        "movies"
+      ],
+      "frequency": 35
+    },
+    {
+      "canonical": "christmas",
+      "members": [
+        "christmas"
+      ],
+      "frequency": 35
+    },
+    {
+      "canonical": "fan",
+      "members": [
+        "fan"
+      ],
+      "frequency": 35
+    },
+    {
+      "canonical": "hours",
+      "members": [
+        "hours"
+      ],
+      "frequency": 34
+    },
+    {
+      "canonical": "usb",
+      "members": [
+        "usb"
+      ],
+      "frequency": 34
+    },
+    {
+      "canonical": "pocket",
+      "members": [
+        "pocket"
+      ],
+      "frequency": 34
+    },
+    {
+      "canonical": "brand",
+      "members": [
+        "brand"
+      ],
+      "frequency": 33
+    },
+    {
+      "canonical": "lens",
+      "members": [
+        "lens"
+      ],
+      "frequency": 33
+    },
+    {
+      "canonical": "picture quality",
+      "members": [
+        "picture quality"
+      ],
+      "frequency": 33
+    },
+    {
+      "canonical": "great sound",
+      "members": [
+        "great sound"
+      ],
+      "frequency": 33
+    },
+    {
+      "canonical": "market",
+      "members": [
+        "market"
+      ],
+      "frequency": 32
+    },
+    {
+      "canonical": "point",
+      "members": [
+        "point"
+      ],
+      "frequency": 32
+    },
+    {
+      "canonical": "shipping",
+      "members": [
+        "shipping"
+      ],
+      "frequency": 31
+    },
+    {
+      "canonical": "features",
+      "members": [
+        "features"
+      ],
+      "frequency": 31
+    },
+    {
+      "canonical": "course",
+      "members": [
+        "course"
+      ],
+      "frequency": 31
+    },
+    {
+      "canonical": "screen protector",
+      "members": [
+        "screen protector"
+      ],
+      "frequency": 31
+    },
+    {
+      "canonical": "card",
+      "members": [
+        "card"
+      ],
+      "frequency": 31
+    },
+    {
+      "canonical": "bit",
+      "members": [
+        "bit"
+      ],
+      "frequency": 31
+    },
+    {
+      "canonical": "difference",
+      "members": [
+        "difference"
+      ],
+      "frequency": 31
+    },
+    {
+      "canonical": "no problem",
+      "members": [
+        "no problem"
+      ],
+      "frequency": 31
+    },
+    {
+      "canonical": "protection",
+      "members": [
+        "protection"
+      ],
+      "frequency": 31
+    },
+    {
+      "canonical": "range",
+      "members": [
+        "range"
+      ],
+      "frequency": 31
+    },
+    {
+      "canonical": "radio",
+      "members": [
+        "radio"
+      ],
+      "frequency": 30
+    },
+    {
+      "canonical": "-",
+      "members": [
+        "-"
+      ],
+      "frequency": 30
+    },
+    {
+      "canonical": "bed",
+      "members": [
+        "bed"
+      ],
+      "frequency": 30
+    },
+    {
+      "canonical": "5 stars",
+      "members": [
+        "5 stars"
+      ],
+      "frequency": 29
+    },
+    {
+      "canonical": "head",
+      "members": [
+        "head"
+      ],
+      "frequency": 29
+    },
+    {
+      "canonical": "junk",
+      "members": [
+        "junk"
+      ],
+      "frequency": 28
+    },
+    {
+      "canonical": "same time",
+      "members": [
+        "same time"
+      ],
+      "frequency": 28
+    },
+    {
+      "canonical": "plug",
+      "members": [
+        "plug"
+      ],
+      "frequency": 28
+    },
+    {
+      "canonical": "week",
+      "members": [
+        "week"
+      ],
+      "frequency": 28
+    },
+    {
+      "canonical": "antenna",
+      "members": [
+        "antenna"
+      ],
+      "frequency": 28
+    },
+    {
+      "canonical": "chance",
+      "members": [
+        "chance"
+      ],
+      "frequency": 27
+    },
+    {
+      "canonical": "family",
+      "members": [
+        "family"
+      ],
+      "frequency": 27
+    },
+    {
+      "canonical": "projector",
+      "members": [
+        "projector"
+      ],
+      "frequency": 26
+    },
+    {
+      "canonical": "line",
+      "members": [
+        "line"
+      ],
+      "frequency": 26
+    },
+    {
+      "canonical": "long time",
+      "members": [
+        "long time"
+      ],
+      "frequency": 26
+    },
+    {
+      "canonical": "friends",
+      "members": [
+        "friends"
+      ],
+      "frequency": 26
+    },
+    {
+      "canonical": "buds",
+      "members": [
+        "buds"
+      ],
+      "frequency": 25
+    },
+    {
+      "canonical": "display",
+      "members": [
+        "display"
+      ],
+      "frequency": 25
+    },
+    {
+      "canonical": "settings",
+      "members": [
+        "settings"
+      ],
+      "frequency": 25
+    },
+    {
+      "canonical": "hub",
+      "members": [
+        "hub"
+      ],
+      "frequency": 25
+    },
+    {
+      "canonical": "durability",
+      "members": [
+        "durability"
+      ],
+      "frequency": 25
+    },
+    {
+      "canonical": "support",
+      "members": [
+        "support"
+      ],
+      "frequency": 25
+    },
+    {
+      "canonical": "area",
+      "members": [
+        "area"
+      ],
+      "frequency": 25
+    },
+    {
+      "canonical": "air",
+      "members": [
+        "air"
+      ],
+      "frequency": 25
+    },
+    {
+      "canonical": "waste",
+      "members": [
+        "waste"
+      ],
+      "frequency": 25
+    },
+    {
+      "canonical": "water",
+      "members": [
+        "water"
+      ],
+      "frequency": 24
+    },
+    {
+      "canonical": "microphone",
+      "members": [
+        "microphone"
+      ],
+      "frequency": 24
+    },
+    {
+      "canonical": "charm",
+      "members": [
+        "charm"
+      ],
+      "frequency": 24
+    },
+    {
+      "canonical": "school",
+      "members": [
+        "school"
+      ],
+      "frequency": 24
+    },
+    {
+      "canonical": "past",
+      "members": [
+        "past"
+      ],
+      "frequency": 24
+    },
+    {
+      "canonical": "description",
+      "members": [
+        "description"
+      ],
+      "frequency": 23
+    },
+    {
+      "canonical": "netflix",
+      "members": [
+        "netflix"
+      ],
+      "frequency": 23
+    },
+    {
+      "canonical": "gps",
+      "members": [
+        "gps"
+      ],
+      "frequency": 23
+    },
+    {
+      "canonical": "email",
+      "members": [
+        "email"
+      ],
+      "frequency": 23
+    },
+    {
+      "canonical": "purse",
+      "members": [
+        "purse"
+      ],
+      "frequency": 23
+    }
+  ]
+}
